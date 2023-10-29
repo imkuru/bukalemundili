@@ -1,0 +1,28 @@
+﻿sınıf pozitifnegatif
+{
+	fonksiyon başla()
+	{
+		yazA("Bu Program girilen sayıların toplamlarını ve bölümlerini verir.");
+		sayı x,y;
+		yaz("1. sayı...: ");
+		x = oku();
+		
+		yaz("2. sayı...: ");
+		y = oku();
+		
+		topla(x,y);
+		böl(x,y);
+	}
+
+	fonksiyon topla(sayı a, sayı b)
+	{
+		sayı sonuc = a + b;
+		yazA("Toplamları ", sonuc);
+	}
+
+	fonksiyon böl(sayı t, sayı m)
+	{
+		sayı s =  t / m;
+		yazA("Bölme sonucu..: ", s);
+	}
+}

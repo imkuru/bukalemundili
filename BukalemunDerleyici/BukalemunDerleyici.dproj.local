@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.829,=D:\Projeler\Delphi12\BukalemunDerleyici\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.122,=D:\Projeler\Delphi12\BukalemunDerleyici\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.684,D:\Projeler\Delphi12\BukalemunDerleyici\Unit2.pas=D:\Projeler\Delphi12\BukalemunDerleyici\TiplerU.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.223,D:\Projeler\Delphi12\BukalemunDerleyici\Unit2.pas=D:\Projeler\Delphi12\BukalemunDerleyici\KodParcalaU.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.842,D:\Projeler\Delphi12\BukalemunDerleyici\Project1.dproj=D:\Projeler\Delphi12\BukalemunDerleyici\BukalemunDerleyici.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.077,=D:\Projeler\Delphi12\BukalemunDerleyici\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.203,D:\Projeler\Delphi12\BukalemunDerleyici\Unit2.pas=D:\Projeler\Delphi12\BukalemunDerleyici\DosyaU.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.407,C:\Users\i\Documents\RAD Studio\Projects\Project1.dproj=D:\Projeler\Delphi12\BukalemunDerleyici\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.983,D:\Projeler\Delphi12\BukalemunDerleyici\TStack.pas=D:\Projeler\Delphi12\BukalemunDerleyici\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.318,D:\Projeler\Delphi12\BukalemunDerleyici\StackU.pas=D:\Projeler\Delphi12\BukalemunDerleyici\TStackU.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.479,D:\Projeler\Delphi12\BukalemunDerleyici\SozdizimselAnalizU.pas=D:\Projeler\Delphi12\BukalemunDerleyici\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.344,=D:\Projeler\Delphi12\BukalemunDerleyici\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.223,=D:\Projeler\Delphi12\BukalemunDerleyici\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.691,D:\Projeler\Delphi12\BukalemunDerleyici\TStackU.pas=D:\Projeler\Delphi12\BukalemunDerleyici\TStack.pas</Transaction>
+  </Transactions>
+</BorlandProject>

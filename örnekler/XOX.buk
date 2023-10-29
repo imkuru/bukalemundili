@@ -1,0 +1,171 @@
+﻿sınıf xox
+{
+	doğruyanlış birincioyuncu;
+	sayı hamle;
+	doğruyanlış oyunbitti;
+	
+	fonksiyon başla()
+	{
+		değiştir("form", "yazı", "XOX");
+		elemanolustur();
+		birincioyuncu = hayır;
+		hamle = 9;
+		oyunbitti = yanlış;
+	}
+	
+	fonksiyon elemanolustur()
+	{		
+		sayı x,y;
+		x = 10;
+		y = 10;
+		
+		sayı genişlik, yükseklik, etiketmesafesi, btn_yazı, btn_yeni_genişlik;
+		
+		eğer platform != "android" ise
+		{
+			genişlik = 60;
+			yükseklik = 60;
+			etiketmesafesi = 20;
+			btn_yazı = 20;
+			btn_yeni_genişlik = 190;
+		}değilse
+		{
+			genişlik = 300;
+			yükseklik = 300;
+			etiketmesafesi = 50;
+			btn_yazı = 30;
+			btn_yeni_genişlik = 350;
+		}
+		
+		say (sayı a:1...3)
+		{
+			say(sayı b:1...3)
+			{
+				metin eleman;
+				eleman = "d" + a + b;
+				oluştur("düğme", eleman, x, y, "");
+				değiştir(eleman, "genişlik", genişlik);
+				değiştir(eleman, "yükseklik", yükseklik);
+				değiştir(eleman, "yazıboyutu", btn_yazı);
+				değiştir(eleman, "tıklamaolayı", "tıkla");	
+				
+				x += genişlik + 5;	
+			}
+			y += yükseklik + 5;
+			x = 10;
+		}		
+		değiştir("form", "genişlik", 230);	
+		değiştir("form", "yükseklik", 350);
+		
+		oluştur("etiket", "lblSıra", 20, y, "Sıra: 1. oyuncuda");
+		değiştir("lblSıra","yazıboyutu", 14);
+		
+		y += etiketmesafesi + 10;
+		
+		oluştur("düğme", "btnYeniOyun", 10, y, "Yeni Oyun");
+		değiştir("btnYeniOyun", "genişlik", btn_yeni_genişlik);
+		değiştir("btnYeniOyun", "yükseklik", 45);
+		değiştir("btnYeniOyun", "yazıboyutu", 14);
+		değiştir("btnYeniOyun", "tıklamaolayı", "yenioyun");
+	}
+	
+	fonksiyon yenioyun(metin elemanadi)
+	{
+		değiştir("d11", "yazı", "");
+		değiştir("d12", "yazı", "");
+		değiştir("d13", "yazı", "");
+		değiştir("d21", "yazı", "");
+		değiştir("d22", "yazı", "");
+		değiştir("d23", "yazı", "");
+		değiştir("d31", "yazı", "");
+		değiştir("d32", "yazı", "");
+		değiştir("d33", "yazı", "");
+		
+		değiştir("lblSıra", "yazı", "Sıra: 1. oyuncuda");
+		
+		birincioyuncu = hayır;	
+		hamle = 9;
+		oyunbitti = hayır;
+	}
+	
+	fonksiyon kontrol()
+	{
+		say (sayı satir:1...3)
+		{
+			metin okunan1 = "";
+			metin okunan2 = "";
+			say (sayı sutun: 1...3)
+			{
+				metin e1 = "d" + satir + sutun;
+				metin e2 = "d" + sutun + satir;
+				okunan1 += özellik(e1, "yazı");	
+				okunan2 += özellik(e2, "yazı");			
+			}
+			
+			eğer okunan1 == "OOO" veya okunan1 == "XXX" ise
+			{
+				mesaj(metinböl(okunan1,0,1) , " kazandı.");
+				oyunbitti = evet;
+			}
+			
+			eğer okunan2 == "OOO" veya okunan2 == "XXX" ise
+			{
+				mesaj(metinböl(okunan2,0,1), " kazandı.");
+				oyunbitti = evet;
+			}					
+		}
+		
+		metin okunan3 = ""; //çapraz kontrol
+		okunan3 = özellik("d11", "yazı") + özellik("d22", "yazı") +
+			 özellik("d33", "yazı");
+		metin okunan4 = "";
+		okunan4 = özellik("d13", "yazı") + özellik("d22", "yazı") +
+			 özellik("d31", "yazı");
+			
+		eğer okunan3 == "OOO" veya okunan3 == "XXX" ise
+		{
+			mesaj(metinböl(okunan3,0,1), " kazandı.");
+			oyunbitti = evet;
+		}
+			
+		eğer okunan4 == "OOO" veya okunan4 == "XXX" ise
+		{
+			mesaj(metinböl(okunan4,0,1), " kazandı.");
+			oyunbitti = evet;
+		}
+		
+		eğer oyunbitti== hayır ve hamle==0 ise
+		{
+			oyunbitti = evet;
+			mesaj("kimse kazanamadı.");
+		}
+		
+		eğer oyunbitti ise
+			değiştir("lblSıra", "yazı", "");
+	}
+	
+	fonksiyon tıkla(metin elemanadi)
+	{
+		eğer oyunbitti == yanlış ise
+			eğer özellik(elemanadi, "yazı") == "" ise
+			{
+				metin işaret = "O";
+				eğer !birincioyuncu ise
+				{
+					işaret = "X";
+					değiştir("lblSıra", "yazı", "Sıra: 2. oyuncuda");
+				}
+				değilse
+				{
+					değiştir("lblSıra", "yazı", "Sıra: 1. oyuncuda");
+				}
+				
+				birincioyuncu = !birincioyuncu;
+						
+				değiştir(elemanadi, "yazı", işaret);
+				hamle--;
+				
+				kontrol();
+			}	
+	}
+}

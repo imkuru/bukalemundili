@@ -1,0 +1,20 @@
+﻿sınıf notsistemi
+{
+	fonksiyon başla()
+	{
+		yaz("Matematik notunuzu giriniz..: ");
+		sayı not = oku();
+		eğer not <= 100 ve not >= 85 ise
+			yaz("Pek iyi");
+		değilse eğer not < 85 ve not >= 70 ise
+			yaz("İyi");
+		değilse eğer not < 70 ve not >= 55 ise
+			yaz("Orta");
+		değilse eğer not < 55 ve not >= 45 ise
+			yaz("Geçer");
+		değilse eğer not < 45 ve not >= 0 ise
+			yaz("Başarısız");
+		değilse 
+			yaz("Girilen not 0 - 100 arasında olmalıdır.");
+ 	}
+}

@@ -1,0 +1,14 @@
+﻿sınıf sayısay
+{
+	//20den geriye doğru 10'a kadar 
+	//sayıları ekrana yazdıran program
+	fonksiyon başla()
+	{
+		sayı a = 20;
+		tekrarla a >= 10 ise
+		{
+			yazA(a);
+			a--;
+		}
+	}	
+}

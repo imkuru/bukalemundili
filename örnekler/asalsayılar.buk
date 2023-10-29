@@ -1,0 +1,19 @@
+﻿sınıf asalsayılar
+{
+	fonksiyon başla() 
+	{
+		say (sayı a: 2...100)
+		{
+			doğruyanlış asal = doğru;
+			
+			say (sayı b: 2..a)
+			{
+				sayı kalan = a % b;
+				eğer kalan == 0 ise
+					asal = yanlış;
+			}
+			eğer asal ise
+				yazA(a, " Bu sayı asal sayıdır.");
+		}		
+	}
+}							

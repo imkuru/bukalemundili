@@ -1,0 +1,22 @@
+﻿sınıf faktöriyel
+{
+	fonksiyon başla() 
+	{
+		sayı a;
+		yaz("Faktöriyeli alınacak sayıyı giriniz..: ");
+		a = oku();
+		sayı f = faktöriyel_hesapla(a);
+		yaz(a, " sayısının faktöriyeli..: ", f, " dir");
+	}
+	
+	fonksiyon faktöriyel_hesapla(sayı n)
+	{
+		sayı sonuç = 1;
+		tekrarla n > 1 ise
+		{
+			sonuç *= n;
+			n--;
+		}
+		gönder sonuç;
+	}
+}

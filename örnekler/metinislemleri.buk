@@ -1,0 +1,11 @@
+﻿sınıf metinişlemleri
+{
+	fonksiyon başla()
+	{
+		değiştir("form", "yazı", "Metin Örneği");
+		metin a = "ibrahim kuru";
+		metin b = metinböl(a, 4, 6);
+		mesaj(a);
+		mesaj(b);
+	}
+}

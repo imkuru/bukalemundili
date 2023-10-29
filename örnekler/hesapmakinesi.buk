@@ -1,0 +1,113 @@
+﻿sınıf winform
+{
+	vsayı sayı1, sayı2;
+	fonksiyon başla()
+	{
+		ilklemeler();
+	}
+	
+	fonksiyon ilklemeler()
+	{
+		oluştur("metinkutusu", "txt1", 100, 50, "10");
+		oluştur("metinkutusu", "txt2", 100, 80, "3");
+			
+		oluştur("etiket", "lbl0", 30, 5, "Bukalemun Hesap Makinesi");
+		değiştir("lbl0", "yazıboyutu", 20);
+				
+		oluştur("etiket", "lbl1", 30, 53, "1. Sayı");
+		değiştir("lbl1", "yazıboyutu", 12);
+		
+		oluştur("etiket", "lbl2", 30, 83, "2. Sayı");
+		değiştir("lbl2", "yazıboyutu", 12);
+		
+		oluştur("etiket", "lbl3", 30, 113, "Sonuç");
+		değiştir("lbl3", "yazıboyutu", 12);
+		
+		oluştur("etiket", "lblSonuç", 100, 108, "0");
+		değiştir("lblSonuç", "yazıboyutu", 18);
+		
+		oluştur("düğme", "btn1", 30, 150, "Topla");
+		değiştir("btn1", "tıklamaolayı", "topla");
+		
+		oluştur("düğme", "btn2", 80, 150, "Çıkar");
+		değiştir("btn2", "tıklamaolayı", "çıkar");
+		
+		oluştur("düğme", "btn3", 130, 150, "Çarp");
+		değiştir("btn3", "tıklamaolayı", "çarp");
+		
+		oluştur("düğme", "btn4", 180, 150, "Böl");
+		değiştir("btn4", "tıklamaolayı", "böl");
+		
+		oluştur("düğme", "btn5", 230, 150, "Mod");
+		değiştir("btn5", "tıklamaolayı", "mod");
+		
+		oluştur("düğme", "btn6", 280, 150, "Üssü");
+		değiştir("btn6", "tıklamaolayı", "üssü");
+		
+		say(sayı i:1...6)
+		{
+			metin elemanadı = "btn" + i;
+			değiştir(elemanadı, "genişlik", 45);
+		}
+		
+		değiştir("form", "genişlik", 400);
+		değiştir("form", "yükseklik", 250);
+		değiştir("form", "yazı", "Bukalemun Hesap Makinesi");
+	}
+	
+	fonksiyon sayılarıal()
+	{
+		sayı1 = özellik("txt1", "yazı");
+		sayı2 = özellik("txt2", "yazı");
+	}
+	
+	fonksiyon topla(metin elemanadi)
+	{
+		sayılarıal();
+		metin c = sayı1 + sayı2;
+		
+		değiştir("lblSonuç","yazı",c);				
+	}
+	
+	fonksiyon çıkar(metin elemanadi)
+	{
+		sayılarıal();
+		metin c = sayı1 - sayı2;
+		
+		değiştir("lblSonuç","yazı",c);	
+	}
+	
+	fonksiyon çarp(metin elemanadi)
+	{
+		sayılarıal();
+		metin c = sayı1 * sayı2;
+		
+		değiştir("lblSonuç","yazı",c);		
+	}
+	
+	fonksiyon böl(metin elemanadi)
+	{
+		sayılarıal();
+		metin c = sayı1 / sayı2;
+		
+		değiştir("lblSonuç","yazı",c);		
+	}
+	
+	fonksiyon mod(metin elemanadi)
+	{
+		sayılarıal();
+		metin c = sayı1 % sayı2;
+		
+		değiştir("lblSonuç","yazı",c);		
+	}
+	
+	fonksiyon üssü(metin elemanadi)
+	{
+		sayılarıal();
+		sayı u;
+		u=sayı2;
+		metin c = sayı1 ** u;
+		
+		değiştir("lblSonuç","yazı",c);		
+	}
+}

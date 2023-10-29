@@ -1,0 +1,16 @@
+﻿sınıf test
+{
+	//klavyeden girilen sayının karesini ve 
+	//kendisi kadar üssünü hesaplayan program
+	fonksiyon başla()
+	{
+		yazA(tarihsaat());
+		yaz("Bir sayı giriniz...: ");
+		sayı a = oku();
+		sayı b = a	*a;
+		sayı c = a**a;		
+		yazA("girilen sayının karesi: ", b);		
+		yazA	("girilen sayının kendine göre üssü..: ", c);	
+		
+	}
+}	

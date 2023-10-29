@@ -1,0 +1,67 @@
+﻿sınıf uzunluk
+{
+	sayı sy;
+	sayı tahmin, denemesayısı;
+	
+	fonksiyon başla()
+	{
+		denemesayısı = 0; 
+		tut();
+		yazA("Aklımdan 1 ile 10 arasında bir sayı tuttum. Bu sayıyı tahmin edebilecekmisiniz?");
+		yazA("Hazır olunca enter tuşuna basınız.");
+		oku();
+		doğruyanlış yinele = evet;
+
+		tekrarla yinele ise
+		{
+			yinele = tahminet();
+		}
+		yazA("");
+		yaz("Oyun Bitti");
+	}
+	
+	fonksiyon tahminet()
+	{
+		sayıgir();
+		yazA("");
+		denemesayısı++;
+		eğer tahmin < sy ise
+		{
+			yazA("Daha büyük bir sayı giriniz.");
+			gönder doğru;
+		}değilse eğer tahmin > sy ise
+		{
+			yazA("Daha küçük bir sayı giriniz.");
+			gönder doğru;
+		}değilse
+		{
+			yazA("Tebrikler ", denemesayısı, " defada buldunuz.");
+			gönder yanlış;
+		}
+	}
+	
+	fonksiyon sayıgir()
+	{
+		doğruyanlış dy = evet;
+		tekrarla dy ise
+		{
+			yaz("1 ile 10 arasında bir sayı giriniz.");
+			tahmin = oku();
+			eğer tahmin < 1 veya tahmin > 10 ise
+			{
+				dy = evet;
+		
+			}
+			değilse
+			{
+				dy = hayır;
+	
+			}
+		}
+	}
+	
+	fonksiyon tut()
+	{
+		sy = rastgele(10)  + 1;
+	}
+}
